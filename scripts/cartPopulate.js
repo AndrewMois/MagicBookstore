@@ -15,7 +15,7 @@ $(document).ready(function () {
     var totalAmount = 0;
     console.log(cartItems);
 
-    $.getJSON("https://raw.githubusercontent.com/AndrewMois/Lab9-JS/main/products.json", function (data) {
+    $.getJSON("https://raw.githubusercontent.com/AndrewMois/MagicBookstore/main/source/products.json", function (data) {
         const products = data.products;
 
         if (cartItems == null) {

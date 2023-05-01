@@ -11,7 +11,7 @@ $(document).ready(function () {
     //////////////////////////////////////////
 
     // Here we are using the jQuery getJSON method to retrieve the data from the JSON file and display it on the page using function.
-    $.getJSON("https://raw.githubusercontent.com/AndrewMois/Lab9-JS/main/products.json", function (data) {
+    $.getJSON("https://raw.githubusercontent.com/AndrewMois/MagicBookstore/main/source/products.json", function (data) {
         const products = data.products;
         
         for (book of products) {

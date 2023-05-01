@@ -1,43 +1,43 @@
 {
     "products": [
         {
-            "image": "/images/harry-potter-1.jpg",
+            "image": "images/harry-potter-1.jpg",
             "name": "Harry Potter and the Philosopher's Stone",
             "author": "by J.K. Rowling",
             "price": 7.75
         },
         {
-            "image": "/images/harry-potter-2.jpg",
+            "image": "images/harry-potter-2.jpg",
             "name": "Harry Potter and the Chamber of Secrets",
             "author": "by J.K. Rowling",
             "price": 8.15
         },
         {
-            "image": "/images/harry-potter-3.jpg",
+            "image": "images/harry-potter-3.jpg",
             "name": "Harry Potter and the Prisoner of Azkaban",
             "author": "by J.K. Rowling",
             "price": 9.00
         },
         {
-            "image": "/images/harry-potter-4.jpg",
+            "image": "images/harry-potter-4.jpg",
             "name": "Harry Potter and the Goblet of Fire",
             "author": "by J.K. Rowling",
             "price": 9.50
         },
         {
-            "image": "/images/harry-potter-5.jpg",
+            "image": "images/harry-potter-5.jpg",
             "name": "Harry Potter and the Order of the Phoenix",
             "author": "by J.K. Rowling",
             "price": 10.55
         },
         {
-            "image": "/images/harry-potter-6.jpg",
+            "image": "images/harry-potter-6.jpg",
             "name": "Harry Potter and the Half-Blood Prince",
             "author": "by J.K. Rowling",
             "price": 10.25
         },
         {
-            "image": "/images/harry-potter-7.jpg",
+            "image": "images/harry-potter-7.jpg",
             "name": "Harry Potter and the Deathly Hallows",
             "author": "by J.K. Rowling",
             "price": 10.99

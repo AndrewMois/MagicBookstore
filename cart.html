@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="email" content="mois0044@algonquinlive.com">
+    <meta name="author" content="Andriy Moiseyenko">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600&family=Montserrat:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <script src="source/jquery-3.6.1.min.js"></script>
+    <script src="scripts/cartPopulate.js"></script>
+    <title>Book store</title>
+</head>
+
+<body>
+    <h1 id="logo">Where Magic Happens Booktore</h1>
+    <div class="container">
+        <main>
+
+            <div id="title">
+                <h1>Cart</h1>
+            </div>
+            <div id="subtitle">
+                <h2>
+                    Check your order and reach us if you have questions.
+                </h2>
+            </div>
+
+
+            <div class="inCart-bar">
+                <div class="cart">
+                    <a href="index.html">
+                        <iconify-icon icon="material-symbols:line-start-arrow-notch"
+                            style="color: white;"></iconify-icon>
+                        <p>Back to store</p>
+                    </a>
+                </div>
+            </div>
+            <h2>Our favourites books:</h2>
+            <div class="cart-parent">
+                <!-- CONTENT GOES HERE -->
+                <div class="cart-container">
+
+
+                </div>
+                <div class="form-container">
+                    <!-- TOTAL GOES HERE -->
+                    <div class="total">
+
+                    </div>
+                    <hr>
+                    <form action="summary.html" method="GET" name="order">
+                        <label for="Name">Your name*:</label>
+                        <input type="text" id="Name" name="Name">
+                        <br>
+                        <span id="nameError"></span>
+
+                        <label for="Email">Your email*:</label>
+                        <input type="email" id="Email" name="Email">
+                        <br>
+                        <span id="emailError"></span>
+
+                        <label for="Phone">Your phone*:</label>
+                        <input type="tel" id="Phone" name="Phone">
+                        <br>
+                        <span id="phoneError"></span>
+                        <label for="date">Delivery date:</label>
+                        <input type="text" id="Date" name="date" placeholder="MM/DD/YYYY">
+                        <br>
+                        <span id="dateError"></span>
+
+                        <label for="address">Delivery address*:</label>
+                        <input type="text" id="Address" name="address">
+                        <br>
+                        <span id="addressError"></span>
+
+                        <label for="Province">Your province*:</label>
+                        <input list="provinces" name="province" id="Province">
+
+                        <datalist id="provinces">
+                            <option value="Alberta">
+                            <option value="British Columbia">
+                            <option value="Manitoba">
+                            <option value="New Brunswick">
+                            <option value="Newfoundland and Labrador">
+                            <option value="Northwest Territories">
+                            <option value="Nunavut">
+                            <option value="Ontario">
+                            <option value="Prince Edward Island">
+                            <option value="Quebec">
+                            <option value="Saskatchewan">
+                            <option value="Yukon">
+                        </datalist>
+                        <br>
+                        <span id="provinceError"></span>
+
+
+                        <input type="checkbox" id="avoidCall" name="avoidCall" value="avoidCall">
+                        <label for="avoidCall">Do not call me to verify</label>
+                        <br>
+                        <span id="avoidCallError"></span>
+                        <fieldset>
+                            <legend>Choose your delivery type*:</legend>
+                            <div class="radio-set">
+                                <input type="radio" id="economy" name="deliveryType" value="Economy">
+                                <label for="economy" class="label-small">Economy</label>
+                            </div>
+                            <div class="radio-set">
+                                <input type="radio" id="standart" name="deliveryType" value="Standart">
+                                <label for="standart" class="label-small">Standart</label>
+                            </div>
+                            <div class="radio-set">
+                                <input type="radio" id="expedited" name="deliveryType" value="Expedited">
+                                <label for="expedited" class="label-small">Expedited</label>
+                            </div>
+                            <!-- <span id="deliveryError" class="error"></span> -->
+                        </fieldset>
+                        <br>
+
+                        <input type="submit" id="submitBtn" value="Submit">
+                        <input type="reset" name="Reset">
+
+                    </form>
+
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+    <div id="invisible"></div>
+    <script src="/scripts/validate.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</body>
+
+</html>

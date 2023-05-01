@@ -1,0 +1,315 @@
+html,
+body {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  height: 100%;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: minmax(30px, 1fr) minmax(700px, 3fr) minmax(25px, 1fr);
+  grid-template-rows: min-content;
+  background: url(images/background-1.png) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+div.container {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: white;
+  border: 1px solid rgb(139, 69, 19);
+  padding: 30px;
+}
+
+h1#logo {
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 1px 20px black;
+  text-align: center;
+  font-size: 4vw;
+  /* to make logo look good on different screen sizes */
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+div#invisible {
+  /* creates a gap that fits under the container in the grid. Otherwise, min-content property of grid "eats" margin bottom */
+  height: 5vh;
+  grid-row: 3/4;
+}
+
+/***********************************************************************
+ *  Container settings
+ **********************************************************************/
+div.container h1 {
+  font-family: "Cormorant", serif;
+  color: rgb(139, 69, 19);
+  font-size: 2.8vw;
+}
+
+div.container h2 {
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  font-size: 2vw;
+}
+
+div.container h3 {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+}
+
+/***********************************************************************
+ *  Title & heading settings
+ **********************************************************************/
+div#title {
+  text-align: center;
+}
+
+div#subtitle,
+div#date {
+  text-align: center;
+}
+
+/***********************************************************************
+ *  Cart bar settings
+ **********************************************************************/
+div.cart-bar {
+  display: flex;
+  background-color: hsl(25deg, 76%, 31%);
+  padding: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+div.cart-bar div.cart a {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  color: hsl(0deg, 100%, 100%);
+  padding: 10px;
+}
+div.cart-bar div.cart a p {
+  margin: 0;
+  padding: 0;
+}
+div.cart-bar div.cart a:hover {
+  background-color: hsl(25deg, 75%, 42%);
+}
+
+/***********************************************************************
+ *  Shop page layout
+ **********************************************************************/
+div.shop-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin: 10px;
+}
+
+div.item-image img {
+  height: 300px;
+}
+
+div.shop-item {
+  display: flex;
+  flex-direction: column;
+}
+div.shop-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+div.shop-item p.author {
+  font-style: italic;
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+div.shop-item p.price {
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+div.shop-item .btn {
+  border: 0;
+  cursor: pointer;
+  margin: auto 0 5px 0;
+  background-color: hsl(25deg, 76%, 31%);
+  color: hsl(0deg, 100%, 100%);
+  padding: 5px 20px;
+  font-size: 1rem;
+  font-family: "Cormorant", serif;
+}
+div.shop-item .btn:hover {
+  background-color: hsl(25deg, 75%, 42%);
+}
+
+/***********************************************************************
+ *  Cart page layout
+ **********************************************************************/
+div.inCart-bar {
+  display: flex;
+  background-color: hsl(25deg, 76%, 31%);
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: start;
+}
+div.inCart-bar div.cart a {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  color: hsl(0deg, 100%, 100%);
+  padding: 10px;
+}
+div.inCart-bar div.cart a p {
+  margin: 0;
+  padding: 0;
+}
+div.inCart-bar div.cart a:hover {
+  background-color: hsl(25deg, 75%, 42%);
+}
+
+div.cart-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 10px;
+}
+
+div.cart-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  border-right: 1px solid hsl(25deg, 76%, 31%);
+}
+div.cart-container img {
+  height: 150px;
+}
+div.cart-container p.author {
+  font-style: italic;
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+div.cart-container p.price,
+div.cart-container p.quantity {
+  font-size: 0.8rem;
+  display: inline-block;
+  font-weight: 700;
+}
+div.cart-container span.price-num,
+div.cart-container span.quantity-num {
+  font-size: 1rem;
+}
+
+.label-small {
+  font-size: 0.8rem;
+  margin: 0;
+  display: inline-block;
+}
+
+div.form-container p.sub-total {
+  font-size: 1.2rem;
+  margin: 0 0 20px 0;
+}
+div.form-container p.total-sum {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Cormorant", serif;
+  margin: 0 0 20px 0;
+}
+div.form-container hr {
+  width: 90%;
+  margin: 30px 0;
+}
+div.form-container form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+div.form-container form .error {
+  box-shadow: 2px 2px 16px hsl(25deg, 76%, 31%);
+  border: 1px solid hsl(25deg, 76%, 31%);
+}
+div.form-container form .error::placeholder {
+  color: hsl(25deg, 76%, 31%);
+}
+div.form-container form input:not([type=submit]):not([type=reset]):not([type=checkbox]) {
+  display: block;
+  width: 90%;
+  height: 25px;
+  padding: 5px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(139, 69, 19);
+}
+div.form-container form input[type=submit],
+div.form-container form input[type=reset] {
+  display: block;
+  width: 90%;
+  height: 35px;
+  padding: 5px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(139, 69, 19);
+  background-color: hsl(25deg, 76%, 31%);
+  color: hsl(0deg, 100%, 100%);
+  font-family: "Cormorant", serif;
+  cursor: pointer;
+}
+div.form-container form input[type=submit]:hover,
+div.form-container form input[type=reset]:hover {
+  background-color: hsl(25deg, 75%, 42%);
+}
+div.form-container form input[type=checkbox],
+div.form-container form label[for=avoidCall] {
+  display: inline-block;
+  width: fit-content;
+  margin: 0 1rem 2rem 0;
+}
+div.form-container form input[type=checkbox] {
+  height: 22px;
+  width: 22px;
+}
+div.form-container form fieldset {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+div.form-container form fieldset div.radio-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.form-container form fieldset label {
+  margin: 0;
+}
+div.form-container form fieldset input {
+  width: auto;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/***********************************************************************
+ *  Summary page layout
+ **********************************************************************/
+ul.order {
+  list-style: disclosure-closed;
+}
+ul.order li {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+ul.orderInfo {
+  list-style: none;
+}
+ul.orderInfo li {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */
